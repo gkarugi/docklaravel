@@ -68,4 +68,4 @@ COPY srcs/nginx /
 
 EXPOSE 8080
 
-CMD ["/sbin/runit-wrapper"]
+CMD ["chmod", "+x","/sbin/runit-wrapper"]
