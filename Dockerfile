@@ -23,11 +23,8 @@ RUN apk add --no-cache \
     libpng-dev \
     make \
     mysql-client \
-    nodejs \
-    nodejs-npm \
     openssh-client \
     ca-certificates \
-    rsync \
     && ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 
