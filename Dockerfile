@@ -61,6 +61,7 @@ RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV PATH="./vendor/bin:$PATH"
 
+# Install hirak/prestissimo for faster composer installs
 RUN composer global require hirak/prestissimo --no-plugins --no-scripts
 
 COPY srcs/nginx /
